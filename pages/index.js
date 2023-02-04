@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "../components/Header/Header";
+import { Sidebar } from "../components/Sidebar/Sidebar";
 
 export default function Home() {
   return (
@@ -12,8 +13,13 @@ export default function Home() {
       </Head>
       <div>
         <Header />
+        <div className="flex">
+          <Sidebar />
+          <div className="w-full h-[700px] ml-[240px]">
+            <h1>test</h1>
+          </div>
+        </div>
       </div>
-      <div className="h-[700px]"></div>
     </>
   );
 }
